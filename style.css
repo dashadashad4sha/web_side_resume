@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #072a16;
+}
+.text-main{
+    text-align: center;
+    position: relative;
+    top: 22%;
+    color: #ffffff;
+}
+.main h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Arial';
+}
+.main p{
+    /*margin-top: 5px;*/
+    font-size: 2rem;
+    font-family: 'Candara Light';
+}
+
+.portfolio{
+    width: 90%;
+    height: 90vh;
+    /*background-color: #5BB49DFF;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio h2{
+    font-size: 3rem;
+    color: #072a16;
+    font-family: 'Arial';
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.container{
+    margin: 10vh auto auto auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card{
+    width: 30%;
+    height: 43vh;
+    /*background-color: #006a4e;*/
+    display: inline-block;
+    /*border: 1px #006a4e;*/
+    border-radius: 25px;
+    margin: 0 7vh;
+    position: relative;
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+
+.back{
+    background-color: #072a16;
+    transform: rotateY(180deg);
+}
+
+.card-p{
+    /*margin-top: 5px;*/
+    font-size: 2rem;
+    font-family: 'Candara Light';
+    text-align: center;
+    margin-top: 42%;
+    transform: translate(0, -50%);
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.card:hover .front {transform: rotateY(180deg);}
+.card:hover .back {transform: rotateY(360deg);}
+
+.skill-li-p{
+    font-size: 1.25rem;
+    font-family: 'Candara Light';
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 3%;
+}
+
+.list{
+    text-align: center;
+    margin-top: 18%;
+}
+
+.contacts{
+    width: 100%;
+    height: 50vh;
+    background-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-card{
+    top: 25%;
+    left: 55px;
+    width: 25vh;
+    height: 50%;
+    background-color: #ffffff;
+    display: inline-block;
+    /*border: 1px #006a4e;*/
+    border-radius: 25px;
+    margin: 0 3%;
+    position: relative;
+
+}
+
+.contact-card img{
+    width: 25vh;
+    height: 25vh;
+}
+
+.contact-card-p{
+    font-size: 1rem;
+    font-family: 'Candara Light';
+    text-transform: uppercase;
+    color: #fff;
+}
